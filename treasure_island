@@ -1,0 +1,46 @@
+print('''
+       ,_
+         :`.            .--._
+          `.`-.        /  ',-""""'
+            `. ``~-._.'_."/
+              `~-._ .` `~;
+                 ;.    /
+                /     /
+carafleurx ,_.-';_,.'`
+             `"-;`/              
+             ,'  
+            ''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+choice = input("THIS is the first step to reach all your dreams, so GOOD LUCK! First of all, what's your first step? Do you want to go through the 'tunnel' or climb the 'mountain'? ").lower()
+
+tunnel = "tunnel"
+mountain = "mountain"
+
+if choice == mountain:
+	print("Congrats! You choose the difficult way, this time it was the right one. ")
+	choice = input("Next decision is waiting for you: Do you want to follow the 'path' or step into the 'forest'? ").lower()
+	path = "path"
+	forest = "forest"
+	
+	if choice == path:
+		print("Your dreams didn't last long. Unfortunatly bandits robb and kill you. GAME OVER.")
+	elif choice == forest:
+		print("Wow, I am impressed! You managed to stay alive and the bandits will rob someone else.")
+		choice = input("You made it throught the forest, now what will you do? Which door? Choose between the 'old', 'new' and 'broken' door! ").lower()
+		old = "old"
+		new = "new"
+		broken = "broken"
+	
+		if choice == old or new:
+			print("My condolensce. You are poor and now you will die. GAME OVER.")
+		
+		elif choice == broken:
+			print("Lucky you, you win! You have three wishes, choose wise. Not all whishes should come true.")
+			
+elif choice == tunnel: 
+	print("You choose the easy way, bad choice. Vampires were waiting for you and suck you dry. GAME OVER.")
+else:
+	print("Wrong input! Try again and this time use your fingers to type.")
+	
